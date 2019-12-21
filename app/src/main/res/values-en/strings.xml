@@ -1,0 +1,288 @@
+<?xml version="1.0"?>
+
+    <resources>
+
+    <string name="btn_comeca">Start</string>
+
+    <string name="btn_carregar">Load save</string>
+
+    <string name="btn_conquista">Achievements</string>
+
+    <string name="btn_sair">Quit</string>
+
+    <string name="app_name">Survive!</string>
+
+    <string name="pessoa">Davidson</string>
+
+    <string name="pessoa_escrevendo">texting ...</string>
+
+    <string name="online">Online</string>
+
+    <string name="hora">00:00</string>
+
+    <string name="fim">Game Over</string>
+
+    <string name="morreu">Davidson died</string>
+
+    <string name="recomecar">Restart</string>
+
+    <string name="sair">Quit</string>
+
+    <string name="sobreviveu">Davidson survived</string>
+
+    <string name="dialogo1"> Sup man? </string>
+
+    <string name="dialogo1a"> Have forgotten me? </string>
+
+    <string name="dialogo1b"> Only 1 week I moved and you do not send me more messages </string>
+
+    <string name="dialogoA1"> I am sorry guy, I am just real busy </string>
+
+    <string name="dialogoA2"> I would never forget my best friend! </string>
+
+    <string name="dialogo2"> Know... </string>
+
+    <string name="dialogo2a"> Hey, here in Colorado is very different from New York </string>
+
+    <string name="dialogo2b"> It is calmer </string>
+
+    <string name="dialogo2c"> Even more here in Littleton </string>
+
+    <string name="dialogoB1"> And you are enjoying it? </string>
+
+    <string name="dialogoB2"> It is good or bad? </string>
+
+    <string name="dialogo3"> I am enjoying </string>
+
+    <string name="dialogo3a"> I think I have gotten used to this place </string>
+
+    <string name="dialogoC1"> So enjoy and get a job around </string>
+
+    <string name="dialogoC2"> Did you get to enroll in any school? </string>
+
+    <string name="dialogo4"> Joker you kkk</string>
+
+    <string name="dialogo4a"> But it is not a bad idea. </string>
+
+    <string name="dialogo4b"> There is a pizzeria nearby, maybe I will have to work there </string>
+
+    <string name="dialogo5"> Yes, I am going to Columbine High School </string>
+
+    <string name="dialogo5a"> Today is my first day of school and Looks like I am going to be late </string>
+
+    <string name="dialogo5b"> I am going to walk, so I should get there at the time of the first interval </string>
+
+    <string name="dialogoD1"> Go fast and when you get to school, let me know </string>
+
+    <string name="dialogoD2"> So you better go fast, we will talk later </string>
+
+    <string name="dialogo6"> I am arriving in the school parking lot </string>
+
+    <string name="dialogo6a"> I met one of the school football team players on the way </string>
+
+    <string name="dialogo6b"> I told him that I wanted to join the team, so he gave me a white cap </string>
+
+    <string name="dialogo6c"> He said that I should put him, because all the players of the team use </string>
+
+    <string name="dialogoE1"> I think it is not a good idea, you just arrived </string>
+
+    <string name="dialogoE2"> Good that everyone will already look at you as a team member </string>
+
+    <string name="dialogo7"> Soon they will look at me as the BEST member of the team </string>
+
+    <string name="dialogo7a"> I am just kidding </string>
+
+    <string name="dialogo7b"> wait 1 minute </string>
+
+    <string name="dialogo7c"> There are two guys in strange clothes, here in the parking lot </string>
+
+    <string name="dialogo7d"> They seem to be students from here, but they have a little bomb... </string>
+
+    <string name="dialogo7e"> One of them told me to take off his cap </string>
+
+    <string name="dialogoF1"> Must be some kind of hazing of veterans </string>
+
+    <string name="dialogoF2"> It is better to take off the cap, for do not make a fight in your first day </string>
+
+    <string name="dialogo8"> At the beginning of the year, these veterans always find some way to pull us. This time I do not fall for it! </string>
+
+    <string name="dialogo8a"> He is coming towards me </string>
+
+    <string name="dialogo9"> True, I am not even part of the team yet. </string>
+
+    <string name="dialogo9a"> I am going into the cafeteria </string>
+
+    <string name="dialogo9b"> Man, this is FULL here </string>
+
+    <string name="dialogo9c"> Wait, I am listening to the noise of shots </string>
+
+    <string name="dialogo9d"> Maybe it´s the guys I saw in the parking lot </string>
+
+    <string name="dialogo9e"> What do I do? </string>
+
+    <string name="dialogoG1"> Maybe they are just trying to scare the fledglings, still in the cafeteria </string>
+
+    <string name="dialogoG2"> Try to go to the second floor until you know what is going on </string>
+
+    <string name="dialogo10"> Ok, I am seeing a staircase on the other side of the cafeteria, I am going there </string>
+
+    <string name="dialogo29"> Ok </string>
+
+    <string name="dialogo29a"> One of the teachers is saying it is not a joke </string>
+
+    <string name="dialogo29b"> There are shooters killing students </string>
+
+    <string name="dialogoG1a"> Sure it is the guys you saw outside </string>
+
+    <string name="dialogo30"> Yes, they are </string>
+
+    <string name="dialogo30a"> The teacher is guiding everyone to leave school </string>
+
+    <string name="dialogoL1"> The shooters can still be outside, stay inside the school </string>
+
+    <string name="dialogoL2"> Do what he said </string>
+
+    <string name="dialogo31"> All right! </string>
+
+    <string name="dialogoL2a"> Davidson? </string>
+
+    <string name="dialogo31a"> Got it!!! </string>
+
+    <string name="dialogo31b"> The shooters were inside the school </string>
+
+    <string name="dialogoL2b"> I am relieved to know that you are okay </string>
+
+    <string name="dialogo32"> Thanks, thanks to you, I am alive </string>
+
+    <string name="dialogo33"> Okay, but I am still here, or am I going somewhere else? </string>
+
+    <string name="dialogo33a"> I see a staircase on the other side of the cafeteria </string>
+
+    <string name="dialogoM1"> Keep going to the cafeteria </string>
+
+    <string name="dialogoM2"> Walk up the stairs </string>
+
+    <string name="dialogo34"> Ok, I am going to hide under the table </string>
+
+    <string name="dialogo34a"> They are back </string>
+
+    <string name="dialogo34b"> They are shooting explosives </string>
+
+    <string name="dialogo34c"> One of them saw me, is coming here </string>
+
+    <string name="dialogo11"> I am already on the second floor </string>
+
+    <string name="dialogo12"> I met a student and the teacher who was in the cafeteria </string>
+
+    <string name="dialogo13"> They are trying to help as many students as possible </string>
+
+    <string name="dialogo14"> I will help them </string>
+
+    <string name="dialogoH1"> No, it is dangerous to stay the halls </string>
+
+    <string name="dialogoH2"> The more people helping better </string>
+
+    <string name="dialogo15"> We got some students out of here </string>
+
+    <string name="dialogo15a"> We are doing great so far </string>
+
+    <string name="dialogo15b"> Damn it, they are down the hall </string>
+
+    <string name="dialogo16"> You are right </string>
+
+    <string name="dialogo16a"> Sorry, I am not being able to reason right anymore. </string>
+
+    <string name="dialogo16b"> This situation is too much for me </string>
+
+    <string name="dialogo16c"> I do not think I can survive </string>
+
+    <string name="dialogoH1a"> Do not worry, you will be fine, just trust me </string>
+
+    <string name="dialogo17"> Thanks for the support </string>
+
+    <string name="dialogo17a"> I am entering the library </string>
+
+    <string name="dialogo17b"> The students are under the tables and there is a teacher behind the counter </string>
+
+    <string name="dialogoI1"> Stay under the table with the other students </string>
+
+    <string name="dialogoI2"> Stay behind the counter with the teacher </string>
+
+    <string name="dialogo27"> They went into the library </string>
+
+    <string name="dialogo27a"> They are killing students </string>
+
+    <string name="dialogoI1a"> Stay calm, they wil not kill you. </string>
+
+    <string name="dialogo28"> They are shooting on the tables </string>
+
+    <string name="dialogo28a"> They are coming </string>
+
+    <string name="dialogo19"> They went into the library, they are killing the students </string>
+
+    <string name="dialogoJ1"> Keep behind the counter </string>
+
+    <string name="dialogoJ2"> When they get distracted, you run </string>
+
+    <string name="dialogo26"> They are threatening a black boy, I will try to run now </string>
+
+    <string name="dialogo20"> Okay, I will stay here then </string>
+
+    <string name="dialogo21"> This is horrible, they have already shot several students </string>
+
+    <string name="dialogo22"> There is a girl next to me, with a big bleeding in the thigh </string>
+
+    <string name="dialogo22a"> If I do not help, she will die </string>
+
+    <string name="dialogoK1"> I do not think that is a good idea, the shooters can see you </string>
+
+    <string name="dialogoK2"> Not hurt to try, maybe you can save her </string>
+
+    <string name="dialogo23"> Ok, I will help her </string>
+
+    <string name="dialogo23a"> True, if I can help end we both dead </string>
+
+    <string name="dialogoK1a"> Wait until the police arrive </string>
+
+    <string name="dialogo24"> Okay, so I will wait here </string>
+
+    <string name="dialogo24a"> The shooters counted to 3 and fired </string>
+
+    <string name="dialogo25"> I think they committed suicide </string>
+
+    <string name="dialogo25a"> I can get out of here now </string>
+
+    <string name="conquista">Achievements</string>
+
+    <string name="conquista1">********************</string>
+
+    <string name="conquista2">************</string>
+
+    <string name="conquista3">*****************</string>
+
+    <string name="conquista4">************</string>
+
+    <!--Dialogo 32, 25a-->
+
+
+    <string name="conquista5">************</string>
+
+    <!--Escolha G1-->
+
+
+    <string name="conquista6">***************</string>
+
+    <!--Escolha G2 ou M2-->
+
+
+    <string name="conquista7">*********************************</string>
+
+    <!--Escolha H1-->
+
+
+    <string name="conquista8">*********</string>
+
+    <!--Escolha H1a-->
+
+
+</resources>

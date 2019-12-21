@@ -1,0 +1,475 @@
+<resources>
+
+    <string name="btn_comeca">Começar</string>
+    <string name="btn_carregar">Carregar Jogo</string>
+    <string name="btn_conquista">Conquistas</string>
+    <string name="btn_sair">Sair</string>
+    <string name="app_name">Sobreviva!</string>
+    <string name="pessoa">Davidson</string>
+    <string name="pessoa_escrevendo">escrevendo ...</string>
+    <string name="online">Online</string>
+    <string name="hora">00:00</string>
+    <string name="fim">Fim de jogo</string>
+    <string name="morreu">Davidson morreu</string>
+    <string name="recomecar">Recomeçar</string>
+    <string name="sair">Sair</string>
+    <string name="sobreviveu">Davidson sobreviveu</string>
+
+
+    <string name="dialogo1">
+        Fala mano, tranquilo?
+    </string>
+
+    <string name="dialogo1a">
+        Já se esqueceu de mim? kkkk
+    </string>
+
+    <string name="dialogo1b">
+        Só tem 1 semana que me mudei e você não me manda mais mensagens
+    </string>
+
+    <string name="dialogoA1">
+        Foi mal cara, eu ando meio ocupado
+    </string>
+
+    <string name="dialogoA2">
+        Eu nunca esqueceria do meu melhor amigo!
+    </string>
+
+    <string name="dialogo2">
+        Sei...
+    </string>
+
+    <string name="dialogo2a">
+        Aí, aqui no Colorado é bem diferente de New York
+    </string>
+
+    <string name="dialogo2b">
+        É bem mais calmo, não tem tanta correria
+    </string>
+
+    <string name="dialogo2c">
+        Ainda mais aqui em Littleton
+    </string>
+
+    <string name="dialogoB1">
+        E você está gostando?
+    </string>
+
+    <string name="dialogoB2">
+        Isso é bom ou ruim?
+    </string>
+
+    <string name="dialogo3">
+        Eu estou curtindo
+    </string>
+
+    <string name="dialogo3a">
+        Acho que já me acostumei com este lugar
+    </string>
+
+    <string name="dialogoC1">
+        Então proveita e arruma um emprego por aí
+    </string>
+
+    <string name="dialogoC2">
+       Conseguiu se matricular em alguma escola?
+    </string>
+
+    <string name="dialogo4">
+        Engraçadinho kkkk
+    </string>
+
+    <string name="dialogo4a">
+        Mas não é uma má ideia
+    </string>
+
+    <string name="dialogo4b">
+        Tem uma pizzaria aqui perto, talvez eu peça pra trabalhar lá
+    </string>
+
+    <string name="dialogo5">
+        Sim, vou estudar na Columbine High School
+    </string>
+
+    <string name="dialogo5a">
+        Aliás, hoje é meu primeiro dia de aula e já vou chegar atrasado
+    </string>
+
+    <string name="dialogo5b">
+        Como vou a pé, devo chegar lá na hora do primeiro intervalo
+    </string>
+
+    <string name="dialogoD1">
+        Vá logo e quando chegar na escola, me avisa
+    </string>
+
+    <string name="dialogoD2">
+        Então é melhor você ir logo, depois a gente se fala
+    </string>
+
+    <string name="dialogo6">
+        Estou chegando no estacionamento da escola
+    </string>
+
+    <string name="dialogo6a">
+        Conheci um dos jogadores do time de futebol da escola no caminho
+    </string>
+
+    <string name="dialogo6b">
+        Falei com ele que eu queria entrar para o time, aí ele me deu um boné branco
+    </string>
+
+    <string name="dialogo6c">
+        Disse que é pra eu colocar ele, porque todos os jogadores do time usam
+    </string>
+
+    <string name="dialogoE1">
+        Acho que não é uma boa ideia, você acabou de chegar
+    </string>
+
+    <string name="dialogoE2">
+        Bom que todos já vão olhar você como membro do time
+    </string>
+
+    <string name="dialogo7">
+        Logo eles vão me olhar como o MELHOR membro do time
+    </string>
+
+    <string name="dialogo7a">
+        Brincaderia kkkk
+    </string>
+
+    <string name="dialogo7b">
+        Espera 1 minuto
+    </string>
+
+    <string name="dialogo7c">
+        Tem dois caras com roupas estranhas, aqui no estacionamento
+    </string>
+
+    <string name="dialogo7d">
+        Parecem ser alunos daqui, mas eles estão com uma bombinha...
+    </string>
+
+    <string name="dialogo7e">
+        Um deles falou que é melhor eu tirar o boné
+    </string>
+
+    <string name="dialogoF1">
+        Deve ser algum tipo de brincadeira dos veteranos
+    </string>
+
+    <string name="dialogoF2">
+        Melhor tirar, para não arrumar confusão no seu primeiro dia
+    </string>
+
+    <string name="dialogo8">
+        No início de ano esses veteranos sempre arrumam algum jeito de nos zoar. Desta vez eu não caio nessa!
+    </string>
+
+    <string name="dialogo8a">
+        Ele está vindo na minha direção
+    </string>
+
+    <string name="dialogo9">
+        Verdade, melhor mesmo, eu nem faço parte do time ainda
+    </string>
+
+    <string name="dialogo9a">
+        Estou entrando na cafeteria
+    </string>
+
+    <string name="dialogo9b">
+        Cara, isso aqui ta lotado
+    </string>
+
+    <string name="dialogo9c">
+        Espera, estou escutando barulho de tiros
+    </string>
+
+    <string name="dialogo9d">
+        Talvez sejam os caras que eu vi no estacionamento
+    </string>
+
+    <string name="dialogo9e">
+        O que eu faço?
+    </string>
+
+    <string name="dialogoG1">
+        Talvez só estejam tentando assustar os calouros, continua na cafeteria
+    </string>
+
+    <string name="dialogoG2">
+        Tenta ir para segundo andar, até saber o que está acontecendo
+    </string>
+
+    <string name="dialogo10">
+        Ok, estou vendo uma escada do outro lado da cafeteria, estou indo até lá
+    </string>
+
+    <string name="dialogo29">
+        Ok
+    </string>
+
+    <string name="dialogo29a">
+        Um dos professores está dizendo que não é uma brincadeira
+    </string>
+
+    <string name="dialogo29b">
+        Tem atiradores matando os alunos
+    </string>
+
+    <string name="dialogoG1a">
+        Com certeza são os caras que você viu do lado de fora
+    </string>
+
+    <string name="dialogo30">
+        Sim, são eles
+    </string>
+
+    <string name="dialogo30a">
+        O professor está orientando todos a sairem da escola
+    </string>
+
+    <string name="dialogoL1">
+        Os atiradores ainda podem estar do lado de fora, continue dentro da escola
+    </string>
+
+    <string name="dialogoL2">
+        Faça oque ele disse
+    </string>
+
+    <string name="dialogo31">
+        Está bem
+    </string>
+
+    <string name="dialogoL2a">
+        Davidson?
+    </string>
+
+    <string name="dialogo31a">
+        Consegui!!!
+    </string>
+
+    <string name="dialogo31b">
+        Os atiradores estavam dentro da escola
+    </string>
+
+    <string name="dialogoL2b">
+        Fico aliviado de saber que você está bem
+    </string>
+
+    <string name="dialogo32">
+        Obrigado, graças a você eu estou vivo
+    </string>
+
+    <string name="dialogo33">
+        Certo, mas eu continuo aqui ou vou para outro lugar?
+    </string>
+
+    <string name="dialogo33a">
+        Estou vendo uma escada do outro lado da cafeteria
+    </string>
+
+    <string name="dialogoM1">
+        Continue na cafeteria
+    </string>
+
+    <string name="dialogoM2">
+        Suba as escadas
+    </string>
+
+    <string name="dialogo34">
+        Ok, vou me esconder embaixo da mesa
+    </string>
+
+    <string name="dialogo34a">
+        Eles voltaram
+    </string>
+
+    <string name="dialogo34b">
+        Estão atirando nos explosivos
+    </string>
+
+    <string name="dialogo34c">
+        Um deles me viu, está vindo pra cá
+    </string>
+
+    <string name="dialogo11">
+        Já estou no segundo andar
+    </string>
+
+    <string name="dialogo12">
+        Encontrei com um aluno e o professor que estava na cafeteria
+    </string>
+
+    <string name="dialogo13">
+        Eles estão tentando ajudar o máximo de alunos possíveis
+    </string>
+
+    <string name="dialogo14">
+        Vou ajudar eles
+    </string>
+
+    <string name="dialogoH1">
+        Não, é perigoso ficar pelos corredores
+    </string>
+
+    <string name="dialogoH2">
+        Quanto mais gente ajudando melhor
+    </string>
+
+    <string name="dialogo15">
+        Conseguimos tirar alguns alunos daqui
+    </string>
+
+    <string name="dialogo15a">
+        Estamos indo bem até agora
+    </string>
+
+    <string name="dialogo15b">
+        Droga, eles estão no final do corredor
+    </string>
+
+    <string name="dialogo16">
+        Você tem razão
+    </string>
+
+    <string name="dialogo16a">
+        Desculpa, eu não estou mais conseguindo raciocinar direito
+    </string>
+
+    <string name="dialogo16b">
+        Essa situação é demais para mim
+    </string>
+
+    <string name="dialogo16c">
+        Acho que eu não vou conseguir sobreviver
+    </string>
+
+    <string name="dialogoH1a">
+        Não se preocupe, você vai ficar bem, só confie em mim
+    </string>
+
+    <string name="dialogo17">
+        Obrigado pelo apoio
+    </string>
+
+    <string name="dialogo17a">
+        Estou entrando na biblioteca
+    </string>
+
+    <string name="dialogo17b">
+        Os alunos estão debaixo das mesas e tem uma professora atras do balcão
+    </string>
+
+    <string name="dialogoI1">
+        Fique em baixo da mesa com os outros alunos
+    </string>
+
+    <string name="dialogoI2">
+        Fique atrás do balcão com a professora
+    </string>
+
+    <string name="dialogo27">
+        Eles entraram na biblioteca
+    </string>
+
+    <string name="dialogo27a">
+        Estão matando os alunos
+    </string>
+
+    <string name="dialogoI1a">
+        Fique calmo, eles não vão te matar
+    </string>
+
+    <string name="dialogo28">
+        Eles estão atirando em cima das mesas
+    </string>
+
+    <string name="dialogo28a">
+        Eles estão vindo
+    </string>
+
+    <string name="dialogo19">
+        Eles entraram na biblioteca, estão matando os alunos
+    </string>
+
+    <string name="dialogoJ1">
+        Continue atrás do balcão
+    </string>
+
+    <string name="dialogoJ2">
+        Quando eles se distrairem, você corre
+    </string>
+
+    <string name="dialogo26">
+        Eles estão ameaçando um rapaz negro, vou tentar correr agora
+    </string>
+
+    <string name="dialogo20">
+        está bem, vou continuar aqui então
+    </string>
+
+    <string name="dialogo21">
+        Isto é horrível, eles ja atiraram em vários alunos
+    </string>
+
+    <string name="dialogo22">
+        Tem uma garota na mesa ao lado, com um grande sagramento na coxa
+    </string>
+
+    <string name="dialogo22a">
+        Se eu não ajudar, ela vai morrer
+    </string>
+
+    <string name="dialogoK1">
+        Não acho que seja uma boa ideia, os atiradores podem te ver
+    </string>
+
+    <string name="dialogoK2">
+        Não custa tentar, talvez possa salvar ela
+    </string>
+
+    <string name="dialogo23">
+        Ok, vou ajudar ela
+    </string>
+
+    <string name="dialogo23a">
+        Verdade, se eu ajudar pode acabar com nós dois mortos
+    </string>
+
+    <string name="dialogoK1a">
+        Espere até os policiais chegarem
+    </string>
+
+    <string name="dialogo24">
+        Tá, então vou esperar aqui
+    </string>
+
+    <string name="dialogo24a">
+        Os atiradores contaram até 3 e atiraram
+    </string>
+
+    <string name="dialogo25">
+        Acho que eles se suicidaram
+    </string>
+
+    <string name="dialogo25a">
+        Agora eu consigo sair daqui
+    </string>
+
+
+    <string name="conquista">Conquistas</string> <!---->
+    <string name="conquista1">************</string> <!--Escolha C1-->
+    <string name="conquista2">**************</string> <!--Escolha E1 ou F2-->
+    <string name="conquista3">*************</string> <!--Dialogo 8, 34, 15, 28, 23-->
+    <string name="conquista4">************</string> <!--Dialogo 32, 25a-->
+    <string name="conquista5">************</string> <!--Escolha G1-->
+    <string name="conquista6">***************</string> <!--Escolha G2 ou M2-->
+    <string name="conquista7">**********</string> <!--Escolha H1a-->
+    <string name="conquista8">*********************************</string> <!--Escolha H1-->
+
+
+</resources>

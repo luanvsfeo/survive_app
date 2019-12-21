@@ -1,0 +1,4454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/teladefundo"
+    android:screenOrientation="portrait"
+    android:orientation="vertical"
+    tools:context=".Conversa">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="?attr/actionBarTheme"
+        app:popupTheme="@style/AppTheme">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/arrow_left_29172"
+            tools:srcCompat="@drawable/ic_launcher_background" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/usuario"
+            tools:srcCompat="@tools:sample/avatars" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pessoa"
+                android:textColor="@color/nome"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/online"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="14dp"
+                android:visibility="visible" />
+        </LinearLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:id="@+id/tela"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="8dp">
+
+            <LinearLayout
+                android:id="@+id/llDialogo1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/mensagem"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/dialogo1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo1"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/hora1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo1a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/dialogo1a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo1a"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/hora1a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo1b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/dialogo1b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo1b"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/hora1b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogoA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/mensagem_eu"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/dialogoA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="2dp"
+                    android:padding="2dp"
+                    android:text="@string/dialogoA1"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/horaA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/llDialogo2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/dialogo2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo2"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+
+                <TextView
+                    android:id="@+id/hora2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo2a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/dialogo2a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo2a"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+
+                <TextView
+                    android:id="@+id/hora2a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo2b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/dialogo2b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo2b"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+
+                <TextView
+                    android:id="@+id/hora2b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo2c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/dialogo2c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo2c"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+
+                <TextView
+                    android:id="@+id/hora2c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogoB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/mensagem_eu"
+                android:gravity="right"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/dialogoB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="2dp"
+                    android:padding="2dp"
+                    android:text="@string/dialogoB1"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+
+                <TextView
+                    android:id="@+id/horaB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/llDialogo3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/dialogo3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo3"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+
+                <TextView
+                    android:id="@+id/hora3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo3a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/dialogo3a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo3a"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+
+                <TextView
+                    android:id="@+id/hora3a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogoC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/mensagem_eu"
+                android:gravity="right"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/dialogoC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="2dp"
+                    android:padding="2dp"
+                    android:text="@string/dialogoC1"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/horaC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/llDialogo4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/dialogo4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo4"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/hora4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo4a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/dialogo4a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo4a"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/hora4a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo4b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/dialogo4b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo4b"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/hora4b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogoCa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/mensagem_eu"
+                android:gravity="right"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/dialogoCa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="2dp"
+                    android:padding="2dp"
+                    android:text="@string/dialogoC2"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/horaCa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/dialogo5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo5"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/hora5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo5a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/dialogo5a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo5a"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/hora5a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo5b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/dialogo5b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo5b"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/hora5b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogoD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/mensagem_eu"
+                android:gravity="right"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/dialogoD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="2dp"
+                    android:padding="2dp"
+                    android:text="@string/dialogoD1"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/horaD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/dialogo6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo6"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/hora6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo6a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/dialogo6a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo6a"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/hora6a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo6b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/dialogo6b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo6b"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/hora6b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo6c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/dialogo6c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo6c"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/hora6c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogoE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/mensagem_eu"
+                android:gravity="right"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/dialogoE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="2dp"
+                    android:padding="2dp"
+                    android:text="@string/dialogoE1"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/horaE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/llDialogo7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/dialogo7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo7"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/hora7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo7a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/dialogo7a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo7a"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/hora7a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo7b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/dialogo7b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo7b"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/hora7b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo7c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/dialogo7c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo7c"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/hora7c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo7d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/dialogo7d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo7d"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/hora7d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo7e"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/dialogo7e"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo7e"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/hora7e"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogoF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/mensagem_eu"
+                android:gravity="right"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/dialogoF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="2dp"
+                    android:padding="2dp"
+                    android:text="@string/dialogoF1"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/horaF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/dialogo8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo8"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/hora8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo8a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/dialogo8a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo8a"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/hora8a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/dialogo9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo9"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/hora9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo9a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/dialogo9a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo9a"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/hora9a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo9b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/dialogo9b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo9b"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/hora9b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo9c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/dialogo9c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo9c"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/hora9c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo9d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/dialogo9d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo9d"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/hora9d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo9e"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/dialogo9e"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo9e"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/hora9e"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogoG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/mensagem_eu"
+                android:gravity="right"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/dialogoG"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="2dp"
+                    android:padding="2dp"
+                    android:text="@string/dialogoG1"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/horaG"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/dialogo29"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo29"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/hora29"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo29a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/dialogo29a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo29a"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/hora29a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo29b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/dialogo29b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo29b"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/hora29b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogoGa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/mensagem_eu"
+                android:gravity="right"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/dialogoGa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="2dp"
+                    android:padding="2dp"
+                    android:text="@string/dialogoG1a"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/horaGa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/dialogo30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo30"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/hora30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo30a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/dialogo30a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo30a"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/hora30a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogoL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/mensagem_eu"
+                android:gravity="right"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/dialogoL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="2dp"
+                    android:padding="2dp"
+                    android:text="@string/dialogoL1"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/horaL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/dialogo31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo31"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/hora31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogoLa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/mensagem_eu"
+                android:gravity="right"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/dialogoLa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="2dp"
+                    android:padding="2dp"
+                    android:text="@string/dialogoL2a"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/horaLa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo31a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/dialogo31a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo31a"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/hora31a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo31b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/dialogo31b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo31b"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/hora31b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogoLb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/mensagem_eu"
+                android:gravity="right"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/dialogoLb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="2dp"
+                    android:padding="2dp"
+                    android:text="@string/dialogoL2b"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/horaLb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/dialogo32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo32"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/hora32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/dialogo33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo33"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/hora33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo33a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/dialogo33a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo33a"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/hora33a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogoM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/mensagem_eu"
+                android:gravity="right"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/dialogoM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="2dp"
+                    android:padding="2dp"
+                    android:text="@string/dialogoM1"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/horaM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/dialogo34"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo34"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/hora34"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo34a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/dialogo34a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo34a"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/hora34a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo34b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/dialogo34b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo34b"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/hora34b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo34c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/dialogo34c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo34c"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/hora34c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/dialogo10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo10"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/hora10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/dialogo11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo11"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/hora11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/dialogo12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo12"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/hora12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/dialogo13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo13"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/hora13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/dialogo14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo14"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/hora14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogoH"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/mensagem_eu"
+                android:gravity="right"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/dialogoH"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="2dp"
+                    android:padding="2dp"
+                    android:text="@string/dialogoH1"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/horaH"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/dialogo15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo15"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/hora15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo15a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/dialogo15a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo15a"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/hora15a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo15b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/dialogo15b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo15b"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/hora15b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/dialogo16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo16"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/hora16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo16a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/dialogo16a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo16a"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/hora16a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo16b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/dialogo16b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo16b"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/hora16b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo16c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/dialogo16c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo16c"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/hora16c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogoHa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/mensagem_eu"
+                android:gravity="right"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/dialogoHa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="2dp"
+                    android:padding="2dp"
+                    android:text="@string/dialogoH1a"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/horaHa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/dialogo17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo17"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/hora17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo17a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/dialogo17a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo17a"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/hora17a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo17b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/dialogo17b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo17b"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/hora17b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogoI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/mensagem_eu"
+                android:gravity="right"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/dialogoI"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="2dp"
+                    android:padding="2dp"
+                    android:text="@string/dialogoI1"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/horaI"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/dialogo27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo27"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/hora27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo27a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/dialogo27a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo27a"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/hora27a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogoIa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/mensagem_eu"
+                android:gravity="right"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/dialogoIa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="2dp"
+                    android:padding="2dp"
+                    android:text="@string/dialogoI1a"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/horaIa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/dialogo28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo28"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/hora28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo28a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/dialogo28a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo28a"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/hora28a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/dialogo19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo19"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/hora19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogoJ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/mensagem_eu"
+                android:gravity="right"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/dialogoJ"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="2dp"
+                    android:padding="2dp"
+                    android:text="@string/dialogoJ1"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/horaJ"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/dialogo26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo26"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/hora26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/dialogo20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo20"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/hora20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/dialogo21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo21"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/hora21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/dialogo22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo22"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/hora22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo22a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/dialogo22a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo22a"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/hora22a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogoK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/mensagem_eu"
+                android:gravity="right"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/dialogoK"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="2dp"
+                    android:padding="2dp"
+                    android:text="@string/dialogoK1"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/horaK"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/dialogo23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo23"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/hora23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo23a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/dialogo23a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo23a"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/hora23a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogoKa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/mensagem_eu"
+                android:gravity="right"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/dialogoKa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="2dp"
+                    android:padding="2dp"
+                    android:text="@string/dialogoK1a"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/horaKa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/dialogo24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo24"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/hora24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo24a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/dialogo24a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo24a"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/hora24a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/dialogo25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo25"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/hora25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDialogo25a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/mensagem"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingLeft="6dp"
+                android:paddingTop="0dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/dialogo25a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/mensagem"
+                    android:padding="2dp"
+                    android:text="@string/dialogo25a"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/hora25a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:text="@string/hora"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/caixaresposta"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@drawable/caixaderesposta1"
+        android:orientation="vertical"
+        android:paddingLeft="6dp"
+        android:paddingTop="0dp"
+        android:paddingRight="4dp"
+        android:paddingBottom="0dp"
+        android:visibility="visible">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorAccent">
+
+    <Button
+        android:id="@+id/A1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="-7dp"
+        android:text="@string/dialogoA1"
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/A2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/dialogoA2"
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/B1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="-7dp"
+        android:text="@string/dialogoB1"
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/B2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/dialogoB2"
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/C1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="-7dp"
+        android:text="@string/dialogoC1"
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/C2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/dialogoC2"
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/C2a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/dialogoC2"
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/D1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="-7dp"
+        android:text="@string/dialogoD1"
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/D2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/dialogoD2"
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/E1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="-7dp"
+        android:text="@string/dialogoE1"
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/E2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/dialogoE2"
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/F1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="-7dp"
+        android:text="@string/dialogoF1"
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/F2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/dialogoF2"
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/G1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="-7dp"
+        android:text="@string/dialogoG1"
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/G2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/dialogoG2"
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/G1a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/dialogoG1a"
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/H1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="-7dp"
+        android:text="@string/dialogoH1"
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/H2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/dialogoH2"
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/H1a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/dialogoH1a"
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/I1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="-7dp"
+        android:text="@string/dialogoI1"
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/I2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/dialogoI2"
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/I1a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/dialogoI1a"
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/J1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="-7dp"
+        android:text="@string/dialogoJ1"
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/J2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/dialogoJ2"
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/K1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="-7dp"
+        android:text="@string/dialogoK1"
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/K2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/dialogoK2"
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/K1a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/dialogoK1a"
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/L1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="-7dp"
+        android:text="@string/dialogoL1"
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/L2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/dialogoL2"
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/L2a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/dialogoL2a"
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/M1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="-7dp"
+        android:text="@string/dialogoM1"
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/M2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/dialogoM2"
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+    </LinearLayout>
+
+</LinearLayout>

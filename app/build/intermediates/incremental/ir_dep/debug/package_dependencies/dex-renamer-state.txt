@@ -1,0 +1,4 @@
+#Sat Jun 01 14:12:21 BRT 2019
+base.0=C\:\\Users\\M4theussouz4\\Pictures\\survivign_in_columbin-20190424T104716Z-001_1\\survivign_in_columbin\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\10
+path.0=classes.dex
+renamed.0=classes.dex
